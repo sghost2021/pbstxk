@@ -1,99 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Phoenix Barber School | Texarkana, TX</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      background-image: url('https://i.ibb.co/YNrmj1g/IMG-8819-1536x1024-blurred.jpg');
-      background-size: cover;
-      background-position: center;
-      color: #333;
-      font-family: 'Roboto', sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    .container {
-      position: relative;
-      z-index: 1;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-      text-align: center;
-    }
-    h1 {
-      font-size: 36px;
-      color: #fff; /* White text color */
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Black shadow */
-      margin-bottom: 20px;
-    }
-    p {
-      font-size: 18px;
-      color: #fff; /* White text color */
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Black shadow */
-      margin-bottom: 10px;
-    }
-    .photos {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-bottom: 30px;
-    }
-    .photos img {
-      width: 250px;
-      height: auto;
-      margin: 10px;
-      border-radius: 8px;
-      transition: transform 0.3s ease;
-    }
-    .photos img:hover {
-      transform: scale(1.1);
-    }
-    .contact-info p:nth-child(1) {
-      color: #c62828;
-    }
-    .schedule h2, .enrollment h2 {
-      color: #fff; /* White text color */
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Black shadow */
-      margin-bottom: 20px;
-    }
-    .download-btn {
-      background-color: #4CAF50;
-      color: white;
-      padding: 15px 30px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 20px;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-    .download-btn:hover {
-      background-color: #45a049;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phoenix Barber School Texarkana</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://cdn11.bigcommerce.com/s-h7l2pcerei/product_images/uploaded_images/ssb-lakeview-2.jpg'); /* Add your background image URL here */
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .ribbon {
+            background-color: navy;
+            color: white;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 999;
+        }
+        .ribbon div {
+            margin: 0 10px;
+        }
+        .ribbon .social-icons {
+            display: flex;
+            align-items: center;
+        }
+        .ribbon .social-icons a {
+            margin-left: 10px;
+            color: white;
+        }
+        .enroll-button-top {
+            background-color: orange;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .enroll-button-top:hover {
+            background-color: darkorange;
+        }
+        .section {
+            padding: 100px 0; /* Adjust padding for space between sections */
+            background-color: rgba(255, 255, 255, 0.8); /* Adjust background color and opacity */
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            position: relative;
+            z-index: 1;
+        }
+        .section h2 {
+            color: navy;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .section p {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .section img {
+            width: 400px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s forwards;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .footer {
+            padding: 20px 0;
+            background-color: rgba(0, 0, 0, 0.8); /* Adjust background color and opacity */
+            color: white;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+        .enroll-button-big {
+            background-color: orange;
+            color: white;
+            padding: 20px 40px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 24px;
+            transition: all 0.3s ease;
+        }
+        .enroll-button-big:hover {
+            background-color: darkorange;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .contact-sections {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .contact-section {
+            flex: 1;
+            margin: 10px;
+            max-width: 300px;
+            position: relative;
+            padding: 20px;
+            border-right: 2px solid navy; /* Add vertical line */
+        }
+        .contact-section:last-child {
+            border-right: none; /* Remove vertical line from last section */
+        }
+        .contact-section h3 {
+            color: navy;
+            font-weight: bold;
+        }
+    </style>
 </head>
-<body>
-  
-  <div class="container">
-    <h1>Phoenix Barber School Texarkana</h1>
-    
-    <div class="photos">
+<body oncontextmenu="return false;"> <!-- Disable right-click -->
+   <div class="ribbon">
+    <div><b>Call Now 903-334-2434</b></div>
+    <div class="social-icons">
+        <a href="https://www.facebook.com" target="_blank"><img src="facebook_icon.png" alt="Facebook" style="width: 30px;"></a>
+        <a href="https://www.instagram.com" target="_blank"><img src="instagram_icon.png" alt="Instagram" style="width: 30px;"></a>
+        <a href="https://drive.google.com/file/d/1ofjnw-ilAxzlVmtdPWrCJgZ1MoRdy0lg/view" class="enroll-button-top" target="_blank">Enroll Now!</a>
+    </div>
+</div>
+
+    <!-- Header Section -->
+<div class="photos">
       <img src="https://i.ibb.co/V2mpbws/Barber-Shop-School-Logo-Origina-Clear-Backgroudl.jpg" alt="Barber School Logo">
       <img src="https://www.tricociuniversity.edu/wp-content/uploads/2022/02/barbering-financial-aid.jpg" alt="Barbering Financial Aid">
       <img src="https://www.tricociuniversity.edu/wp-content/uploads/2022/02/barbering-flexible-schedule.jpg" alt="Barbering Flexible Schedule">
     </div>
-    
-    <div class="contact-info">
-      <p>Our Address: 2400 Richmond Rd ste 53, Inside Mall, Texarkana, Texas 75503</p>
-      <p>Phone: 903-306-2774</p>
-      <p>Email: <a href="mailto:phoenixbarberschooltxk@gmail.com" style="color: #fff; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);">phoenixbarberschooltxk@gmail.com</a></p>
+
+<div class="section">
+        <h1>PHOENIX BARBER SCHOOL TEXARKANA</h1>
+        <div class="enroll-section">
+            <a href="#" class="enroll-button-big" target="_blank">Enroll Now!</a>
+        </div>
     </div>
-    
-    <div class="schedule">
+    <div class="section">
+        <h2>About Us</h2>
+        <p>Example text paragraph under it.</p>
+    </div>
+    <!-- Photo and Link Section 1 -->
+    <div class="section">
+        <img src="https://www.tricociuniversity.edu/wp-content/uploads/2022/02/barbering-flexible-schedule.jpg" alt="Foto">
+    </div>
+    <!-- School Program Section -->
+    <div class="section">
+        <h2>School Program</h2>
+        <p>Example text paragraph under it.</p>
+    </div>
+    <!-- Photo and Link Section 2 -->
+    <div class="section">
+        <img src="https://www.tricociuniversity.edu/wp-content/uploads/2022/02/barbering-financial-aid.jpg" alt="Foto">
+    </div>
+    <!-- WHY Us Section -->
+    <div class="section">
+        <h2>WHY Us</h2>
+        <p>Example text paragraph under it.</p>
+    </div>
+  <div class="schedule">
       <h2>Schedule</h2>
       <p>MON - CLOSED</p>
       <p>TUE-FRIDAY 10am to 6pm </p>
@@ -101,28 +184,36 @@
       <p>SUNDAY - CLOSED</p>
     </div>
 
-    <div class="enrollment">
-      <h2>Ready! to become a Professional Barber?</h2>
-      <p>Click the button below to download the Application form</p>
-      <a href="https://drive.google.com/file/d/1ofjnw-ilAxzlVmtdPWrCJgZ1MoRdy0lg/view" class="download-btn" target="_blank">Download Enrollment Form</a>
+    <!-- Contact Us Section -->
+    <div class="section">
+        <h2>Contact Us</h2>
+        <div class="contact-sections">
+            <div class="contact-section">
+                <h3>Address</h3>
+                <p>2400 Richmond Rd ste 53, Inside Mall</p>
+                <p>Texarkana, Texas 75503</p>
+            </div>
+            <div class="contact-section">
+                <h3>Phone</h3>
+                <p>903-306-2774</p>
+            </div>
+            <div class="contact-section">
+                <h3>Email</h3>
+                <a href="mailto:phoenixbarberschooltxk@gmail.com" style="color: #fff; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);">phoenixbarberschooltxk@gmail.com</a></p>
     </div>
-  </div>
+        </div>
+    </div>
+    <!-- Ready to Become a Professional Barber Section -->
+    <div class="section">
+        <h1>READY TO BECOME A PROFESSIONAL BARBER?</h1>
+        <div class="enroll-section">
+            <a href="https://drive.google.com/file/d/1ofjnw-ilAxzlVmtdPWrCJgZ1MoRdy0lg/view" class="enroll-button-big" target="_blank">Enroll Now!</a>
+        </div>
+    </div>
+<!-- Footer -->
+<div class="footer">
+    <p>&copy; 2024, Phoenix Barber School Texarkana | Website Created by <a href="http://sgmultimediagroup.com" target="_blank">SG Multimedia Group</a></p>
+</div>
 
-  <script>
-    // Function to periodically update the title text
-    function updateTitle() {
-      var titles = ["Phoenix Barber School | Texarkana, TX", "Welcome to Phoenix Barber School", "Learn Barbering with us"];
-      var index = 0;
-
-      // Update title every 3 seconds
-      setInterval(function() {
-        document.title = titles[index];
-        index = (index + 1) % titles.length;
-      }, 3000);
-    }
-
-    // Call the function when the page loads
-    window.onload = updateTitle;
-  </script>
 </body>
 </html>
