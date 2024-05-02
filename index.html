@@ -9,7 +9,7 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background-image: url('https://cdn11.bigcommerce.com/s-h7l2pcerei/product_images/uploaded_images/ssb-lakeview-2.jpg'); /* Add your background image URL here */
+            background-image: url('https://cdn11.bigcommerce.com/s-h7l2pcerei/product_images/uploaded_images/ssb-lakeview-2.jpg');
             background-size: cover;
             background-attachment: fixed;
         }
@@ -52,8 +52,8 @@
             background-color: darkorange;
         }
         .section {
-            padding: 100px 0; /* Adjust padding for space between sections */
-            background-color: rgba(255, 255, 255, 0.8); /* Adjust background color and opacity */
+            padding: 50px 0;
+            background-color: rgba(255, 255, 255, 0.8);
             text-align: center;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
             position: relative;
@@ -83,7 +83,7 @@
         }
         .footer {
             padding: 20px 0;
-            background-color: rgba(0, 0, 0, 0.8); /* Adjust background color and opacity */
+            background-color: rgba(0, 0, 0, 0.8);
             color: white;
             text-align: center;
             position: relative;
@@ -112,7 +112,8 @@
         .contact-sections {
             display: flex;
             justify-content: space-around;
-            align-items: center;
+            align-items: stretch; /* Added to stretch sections to equal height */
+            margin-bottom: 50px;
         }
         .contact-section {
             flex: 1;
@@ -120,100 +121,181 @@
             max-width: 300px;
             position: relative;
             padding: 20px;
-            border-right: 2px solid navy; /* Add vertical line */
+            border-right: 2px solid navy;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
         .contact-section:last-child {
-            border-right: none; /* Remove vertical line from last section */
+            border-right: none;
         }
         .contact-section h3 {
             color: navy;
             font-weight: bold;
         }
+        .contact-section p {
+            margin: 5px 0;
+        }
+        .contact-section a {
+            color: white;
+            text-decoration: none;
+        }
+        .schedule {
+            margin-top: 20px;
+        }
     </style>
 </head>
-<body oncontextmenu="return false;"> <!-- Disable right-click -->
-   <div class="ribbon">
+<body oncontextmenu="return false;">
+<div class="ribbon">
     <div><b>Call Now 903-334-2434</b></div>
     <div class="social-icons">
-        <a href="https://www.facebook.com" target="_blank"><img src="facebook_icon.png" alt="Facebook" style="width: 30px;"></a>
-        <a href="https://www.instagram.com" target="_blank"><img src="instagram_icon.png" alt="Instagram" style="width: 30px;"></a>
+        <a href="https://www.facebook.com/pbstxk" target="_blank"><img src="https://www.pngall.com/wp-content/uploads/13/Facebook-Logo.png" alt="Facebook" style="width: 30px;"></a>
+        <a href="https://www.instagram.com/pbstxk/" target="_blank"><img src="https://www.pngall.com/wp-content/uploads/5/Instagram-Logo-PNG-Free-Image.png" alt="Instagram" style="width: 30px;"></a>
         <a href="https://drive.google.com/file/d/1ofjnw-ilAxzlVmtdPWrCJgZ1MoRdy0lg/view" class="enroll-button-top" target="_blank">Enroll Now!</a>
     </div>
 </div>
 
-    <!-- Header Section -->
 <div class="photos">
-      <img src="https://i.ibb.co/V2mpbws/Barber-Shop-School-Logo-Origina-Clear-Backgroudl.jpg" alt="Barber School Logo">
-      <img src="https://www.tricociuniversity.edu/wp-content/uploads/2022/02/barbering-financial-aid.jpg" alt="Barbering Financial Aid">
-      <img src="https://www.tricociuniversity.edu/wp-content/uploads/2022/02/barbering-flexible-schedule.jpg" alt="Barbering Flexible Schedule">
-    </div>
+    <img src="https://i.ibb.co/V2mpbws/Barber-Shop-School-Logo-Origina-Clear-Backgroudl.jpg" alt="Phoenix Barber School Texarkana Logo">
+</div>
 
+<!-- Header Section -->
 <div class="section">
-        <h1>PHOENIX BARBER SCHOOL TEXARKANA</h1>
-        <div class="enroll-section">
-            <a href="#" class="enroll-button-big" target="_blank">Enroll Now!</a>
-        </div>
-    </div>
-    <div class="section">
-        <h2>About Us</h2>
-        <p>Example text paragraph under it.</p>
-    </div>
-    <!-- Photo and Link Section 1 -->
-    <div class="section">
-        <img src="https://www.tricociuniversity.edu/wp-content/uploads/2022/02/barbering-flexible-schedule.jpg" alt="Foto">
-    </div>
-    <!-- School Program Section -->
-    <div class="section">
-        <h2>School Program</h2>
-        <p>Example text paragraph under it.</p>
-    </div>
-    <!-- Photo and Link Section 2 -->
-    <div class="section">
-        <img src="https://www.tricociuniversity.edu/wp-content/uploads/2022/02/barbering-financial-aid.jpg" alt="Foto">
-    </div>
-    <!-- WHY Us Section -->
-    <div class="section">
-        <h2>WHY Us</h2>
-        <p>Example text paragraph under it.</p>
-    </div>
-  <div class="schedule">
-      <h2>Schedule</h2>
-      <p>MON - CLOSED</p>
-      <p>TUE-FRIDAY 10am to 6pm </p>
-      <p>SAT  10am to 3pm </p>
-      <p>SUNDAY - CLOSED</p>
-    </div>
+    <h2>About Us</h2>
+    <b><p>Phoenix Barber School of Texarkana, More than just great Haircuts.</p>  <p>Learn the art of barbering at our top-notch school.</p> 
+     <p>Master your skills and start your career today!</b></p>
+</div>
 
-    <!-- Contact Us Section -->
-    <div class="section">
-        <h2>Contact Us</h2>
-        <div class="contact-sections">
-            <div class="contact-section">
-                <h3>Address</h3>
-                <p>2400 Richmond Rd ste 53, Inside Mall</p>
-                <p>Texarkana, Texas 75503</p>
-            </div>
-            <div class="contact-section">
-                <h3>Phone</h3>
-                <p>903-306-2774</p>
-            </div>
-            <div class="contact-section">
-                <h3>Email</h3>
-                <a href="mailto:phoenixbarberschooltxk@gmail.com" style="color: #fff; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);">phoenixbarberschooltxk@gmail.com</a></p>
-    </div>
+<!-- Photo and Link Section 1 -->
+<div class="section">
+    <img src="https://www.tricociuniversity.edu/wp-content/uploads/2022/02/barbering-flexible-schedule.jpg" alt="pbstxk.com">
+</div>
+
+<!-- School Program Section -->
+<div class="section">
+    <h2>School Program</h2>
+    <p>Barbershops are making a comeback, popping up all over the country. Do you want to join the exciting world of barbering? First, you’ll need quality career training in a licensed barbering school. Here’s what you’ll learn:</p>
+
+<h2>Knowledge</h2>
+
+<p>The barbering school you choose should teach you a basic scientific understanding of the scalp and hair. You’ll learn about hair anatomy and physiology so you can properly cut, color, style, and treat hair. You’ll also learn about the finer points of men’s grooming and styling. Consider this education ongoing as new trends become popular. Even the most experienced barber needs to continuously hone their craft.</p>
+
+<h2>Technique</h2>
+
+<p>A barbering program will teach you skills and techniques necessary to start a successful career. Many beauty schools offer hands-on instruction in the latest cutting, coloring, and grooming techniques. You should also get firsthand experience and plenty of practice polishing your skills on real clients.</p>
+
+<p>Barbering school will teach you the necessary precautions to keep yourself and your clients safe</p>
+
+<h2>Sanitation and Safety</h2>
+
+<p>Protect yourself and your clients! As a barber, you’ll work with sharp tools and potentially harmful chemicals. In school, you’ll learn the necessary precautions to keep yourself and your clients safe. Proper sanitation to disinfect your tools will lessen the risk of infection. Practice with tools like scissors, razors, and trimmers will help make you an expert and ensure that you avoid nicks and cuts to you and your clients.</p>
+
+<h2>Customer Service</h2>
+
+<p>Whether you work in a salon or barbershop, quality customer service can make or break your career. Your barber training should teach you all about customer service and the business skills you’ll need to work in this growing profession. Customer service is about listening to your clients to keep them coming back time after time.</p>
+
+<h2>State Board Preparation</h2>
+
+<p>Passing the state board exam is the key to unlocking your future career as a barber. After clocking in the hours toward your license, many beauty schools offer a mock state board exam. Instructors in a barbering program will help you identify the areas where you need more practice and work to help you improve.</p>
+</div>
+
+<!-- Photo and Link Section 2 -->
+<div class="section">
+    <img src="https://www.tricociuniversity.edu/wp-content/uploads/2022/02/barbering-financial-aid.jpg" alt="Foto">
+</div>
+
+<!-- WHY Us Section -->
+<div class="section">
+    <h2>Licensing Requirements</h2>
+    <p>Any individual wishing to engage in barbering shall obtain a license in compliance with the Texas Code of Regulations and shall meet the following qualifications:</p>
+
+    <p>Applicant shall be at least 17 years of age;</p>
+    <p>Applicant shall have completed the 10th grade or equivalent;</p>
+   <p>Applicant shall graduate from a Board approved school and complete the</p>              <p>required hours of instruction or apprenticeship;</p>
+    <p>Applicant shall pass the required examinations;</p>
+    <p>Applicant shall submit the application with the required documentation;</p>
+    <p>Applicant shall pay any required fees.</p>
+
+
+<h2>Become licensed as a Barber.</h2>
+<p>Examination Requirements</p>
+
+<p>Each individual who seeks admission to an examination shall complete the following:</p>
+
+    <p>Applicant shall complete minimum of 1,000 hours of instruction; or</p>
+    <p>Applicant shall complete 3,200 hours of apprenticeship;</p>
+    <p>The examinations shall consist of a practical demonstration and a written test;</p>
+        <p>An applicant must obtain a passing score on both exams based on a criterion referenced method determined by the board;</p>
+        <p>An appeal can be made if a failed score is received;</p>
+    <p>Upon passing, Applicant shall pay the required fees.</p>
+
+<h2>Continuing Education Requirements</h2>
+
+<p>There are no continuing education requirements in Texas. Licenses expire every two years at midnight on the last day of the month that the license was issued.
+Apprenticeship Programs</p>
+
+<p>All persons desiring to enter a program of apprenticeship training in Texas shall meet the following requirement:</p>
+
+    <p>Applicant shall be at least 16 years old;</p>
+    <p>Applicant shall have completed the 10th grade or equivalent;</p>
+    <p>Applicant shall complete 39 hours of pre-apprenticeship training;</p>
+    <p>Applicant shall receive a minimum of 216 hours of class room instruction for barbering over a two-year period;</p>
+    <p>• Applicant shall complete 1,500 hours of a full-time apprenticeship;</p>
+      <p>Full-time apprenticeship means employment and training in an approved</p> program for at least 32 hours per week with a maximum of 42-1/2 hours per week.</p>
+    <p>Applicant shall receive at least minimum wage from an approved barber shop.</p>
+</div>
+
+<!-- Pricing -->
+<div class="section">
+    <h2>SCHOOL TUITION</h2>
+    <p><b>Initial deposit ......... 2,500.00</b></p>
+    <p><b>Monthly Payment...........500.00</b></p>
+    <p><b>Tools and Setup............0.00</b></p>
+    <p><b>Total 9,500.00</b></p>
+    <p><b>"We accept all major forms of payment including: PayPal, Zelle & CashApp."</b></p>
+</div>
+
+<!-- Schedule -->
+<div class="section">
+    <h2>Schedule</h2>
+    <p><b>MONDAY - CLOSED</b></p>
+    <p><b>TUESDAY - FRIDAY 10am to 6pm </b></p>
+    <p><b>SATURDAY  10am to 3pm </b></p>
+    <p><b>SUNDAY - CLOSED</b></p>
+</div>
+
+<!-- Contact Us Section -->
+<div class="section">
+    <h2>Contact Us</h2>
+    <div class="contact-sections">
+        <div class="contact-section">
+            <h3>Address</h3>
+            <b><p>2400 Richmond Rd</p> 
+            <p>Ste 53</p>
+            <p>Inside Mall</p>
+            <p>Texarkana, TX</p></b>
+        </div>
+        <div class="contact-section">
+            <h3>Phone</h3>
+            <b><p>903-306-2774</p></b>
+        </div>
+        <div class="contact-section">
+            <h3>Email</h3>
+            <b><p><a href="mailto:phoenixbarberschooltxk@gmail.com" style="color:  #ff361e; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);">phoenixbarberschooltxk@gmail.com</a></p></b>
         </div>
     </div>
-    <!-- Ready to Become a Professional Barber Section -->
-    <div class="section">
-        <h1>READY TO BECOME A PROFESSIONAL BARBER?</h1>
-        <div class="enroll-section">
-            <a href="https://drive.google.com/file/d/1ofjnw-ilAxzlVmtdPWrCJgZ1MoRdy0lg/view" class="enroll-button-big" target="_blank">Enroll Now!</a>
-        </div>
+<!-- Ready to Become a Professional Barber Section -->
+<div class="section">
+    <h1>READY TO BECOME A PROFESSIONAL BARBER?</h1>
+    <div class="enroll-section">
+        <a href="https://drive.google.com/file/d/1ofjnw-ilAxzlVmtdPWrCJgZ1MoRdy0lg/view" class="enroll-button-big" target="_blank">Enroll Now!</a>
     </div>
+</div>
+
 <!-- Footer -->
 <div class="footer">
     <p>&copy; 2024, Phoenix Barber School Texarkana | Website Created by <a href="http://sgmultimediagroup.com" target="_blank">SG Multimedia Group</a></p>
 </div>
-
 </body>
 </html>
